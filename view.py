@@ -257,11 +257,15 @@ class game_interface:
 
   			exit_game_clicked = self.add_button("Exit", 585, 400, 100, 50, \
 				self.BUTTON_INACTIVE_COLOR, self.BUTTON_ACTIVE_COLOR)
+			restart_game_clicked =self.add_button("Restart", 585, 300, 100, 50, \
+				self.BUTTON_INACTIVE_COLOR, self.BUTTON_ACTIVE_COLOR)
 
 			if exit_game_clicked == True:
 				pygame.quit()
 				quit()
-
+			
+			#if restart_game_clicked == True:
+			
   			clicked_cell = self.get_pressed_cell()
 
   			if clicked_cell[0] != -1 and clicked_cell[1] != -1:
